@@ -5,7 +5,7 @@ Estre script foi criado para raspar notcias do site G1, usando queries diversas.
 
 ### Instalação
 
-Para usar o script basta fazer download do arquivo ``` r g1_noticias.R ``` e abri-lo dentro do RStudio/R.
+Para usar o script basta fazer download do arquivo ``` g1_noticias.R ``` e abri-lo dentro do RStudio/R.
 Pacotes necessários: rvest, lubridate,plyr,dplyr e xlsx
 
 
