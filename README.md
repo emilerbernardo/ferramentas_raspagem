@@ -3,10 +3,9 @@
 
 Esta pasta contem algumas ferramentas de raspagem de sites e/ou redes sociais.
 
-Estre script foi criado para raspar notícias do site G1, usando queries diversas. Seu teste de carga pegou 30 mil notícias sobre os mais variados temas. 
-
-
 ### RASPAGEM DE PERFIL DO INSTAGRAM
+
+Este script auxilia na raspagem de dados de perfil de usuários do Instagram. 
 
 #### Instalação
 
@@ -58,6 +57,8 @@ glimpse(busca_completa)
 
 
 ### RASPAGEM DE BUSCA DO G1
+
+Estre script foi criado para raspar notícias do site G1, usando queries diversas. Seu teste de carga pegou 30 mil notícias sobre os mais variados temas. 
 
 #### Instalação
 
