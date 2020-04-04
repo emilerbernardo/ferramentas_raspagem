@@ -55,7 +55,11 @@ busca_perfil <- function(user, timestamp) {
       document <- fromJSON(txt=url)
       end_cursor <- document$data$user$edge_owner_to_timeline_media$page_info$end_cursor
     
-      } else {
+      if(length(document$data$user$edge_owner_to_timeline_media$edges) == 0){
+        message("Blocked or Deleted Profile")
+        break
+        }
+    }  else {
         # buscando as informações da próxima página
         url <- noquote(paste0(n1,id,n2,end_cursor,n3))
         document <- fromJSON(txt=url)
@@ -119,7 +123,7 @@ busca_perfil <- function(user, timestamp) {
 }
 
 # realizando uma busca simples
-busca <- busca_perfil(user = "ninadhora", timestamp = "2020-01-01 00:00:00")
+busca <- busca_perfil(user = "trifenol", timestamp = "2020-01-01 00:00:00")
 
 # realizando uma busca para mais de um perfil
 busca_completa <- Map("busca_perfil",
